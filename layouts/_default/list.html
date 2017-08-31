@@ -1,0 +1,20 @@
+{{ partial "top" . }}
+
+<a href="{{ .Permalink }}">
+  <h1>{{ .Title }}</h1>
+</a>
+
+<section>
+  {{ range .Data.Pages }}
+  <article>
+    <a href="{{ .Permalink }}">
+      <h2>{{ .Title }}</h2>
+      <img src="{{ .Site.BaseURL }}/headers/{{ .File.TranslationBaseName }}.small.jpg">
+      <p>{{ .Params.summary }}</p>
+    </a>
+  </article>
+  {{ end }}
+</section>
+
+{{ partial "bottom" . }}
+

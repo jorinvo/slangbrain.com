@@ -1,0 +1,10 @@
+baseURL: "http://slangbrain.com/"
+languageCode: "en-us"
+copyright: "© 2017 Jorin Vogel"
+title: "Slangbrain"
+
+Languages:
+  en:
+    weight: 1
+  de:
+    weight: 2

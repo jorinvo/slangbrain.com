@@ -1,0 +1,11 @@
+{{ partial "top" . }}
+
+<a href="{{ .Permalink }}">
+	<h1>{{ .Title }}</h1>
+</a>
+
+<img src="{{ .Site.BaseURL }}/headers/{{ .File.TranslationBaseName }}.jpg" alt="post header image">
+
+<article>{{ .Content }}</article>
+
+{{ partial "bottom" . }}

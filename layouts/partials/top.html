@@ -1,0 +1,29 @@
+<html lang="{{ .Site.Language.Lang }}">
+  <head>
+		<title>{{ .Site.Title }}</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <header>
+      {{ if not .IsHome }}
+        <a href="{{ "/" | relLangURL }}">
+          <img src="{{ "images/logo.svg" | relURL }}" alt="{{ .Site.Title }} - Logo">
+        </a>
+      {{ end }}
+
+      {{ if and .IsPage .Section }}
+        <a href="{{ .Section | relLangURL }}">{{ with .Site.GetPage "section" .Section }}{{ .Title }}{{ end }}</a>
+      {{ end }}
+
+      {{ if .IsTranslated }}
+        {{ range .Translations }}
+          <a href="{{ .Permalink }}">{{ .Lang }}</a>
+        {{ end }}
+      {{ else }}
+        {{ range .Site.Languages }}
+          {{ if ne . $.Language }}
+            <a href="{{ printf "%s/%s" .Lang $.Section | relURL }}">{{ . }}</a>
+          {{ end }}
+        {{ end }}
+			{{ end }}
+    </header>

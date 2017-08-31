@@ -1,0 +1,9 @@
+{{ partial "top" . }}
+
+<a href="{{ .Permalink }}">
+  <h1>{{ .Title }}</h1>
+</a>
+
+<article>{{ .Content }}</article>
+
+{{ partial "bottom" . }}

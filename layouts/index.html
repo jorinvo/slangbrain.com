@@ -1,0 +1,28 @@
+{{ partial "top" . }}
+
+<h1>{{ .Site.Title }}</h1>
+<h2>{{ .Params.Slogan }}</h2>
+
+<img src="{{ .Site.BaseURL }}/images/logo.svg" alt="{{ .Site.Title }} - Logo">
+
+<p>
+<a href="https://m.me/slangbrain?ref=https%3A%2F%2Fslangbrain.com%2FJapanese.csv">Get started studying Japanase</a>
+</p>
+
+<section>
+  <a href="{{ "blog/" | relLangURL }}">
+    <h3>{{ i18n "moreblog" }}</h3>
+  </a>
+  {{ range where .Data.Pages "Section" "blog" }}
+  <article>
+    <a href="{{ .Permalink }}">
+
+      <h2>{{ .Title }}</h2>
+      <img src="{{ .Site.BaseURL }}/headers/{{ .File.TranslationBaseName }}.small.jpg">
+      <p>{{ .Params.summary }}</p>
+    </a>
+  </article>
+  {{ end }}
+</section>
+
+{{ partial "bottom" . }}
