@@ -1,8 +1,16 @@
 #!/bin/bash
+set -e
 
-headers_dir="static/headers"
+# Optimize site content
+#
+# Requires graphicsmagick and uglify.
+
+
+headers_dir="static/images/headers"
 header_width=860
 small_width=320
+
+
 
 echo adjusting header sizes and creating small versions:
 
@@ -12,3 +20,9 @@ do
   echo mogrify -resize $header_width "'$f'"
   echo convert -resize $small_width "'$f'" "'$o'"
 done | gm batch -echo on -
+
+
+
+echo optimizing js ...
+
+uglify -s static/js/leoToCSV.js -o static/js/leoToCSV.min.js > /dev/null

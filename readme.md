@@ -1,10 +1,14 @@
 # slangbrain.com
 
-## Misc
 
-- Get the leo.org exporter ready to use as bookmarklet with:
+This repository contains the source code of slangbrain.com.
 
-```
-npm i -g uglify
-uglify -s leoToCSV.js -o leoToCSV.min.js && echo "javascript:$(sed 's/"/\&quot;/g' leoToCSV.min.js)" | copy
-```
+We are happy to get feedback or hear about your feature suggestions in the [issues](/issues) section.
+
+
+
+
+
+---------------------------
+
+© 2017 Jorin Vogel
