@@ -3,7 +3,7 @@
 <h1>{{ .Site.Title }}</h1>
 <h2>{{ .Params.Slogan }}</h2>
 
-<img src="{{ .Site.BaseURL }}/images/logo.svg" alt="{{ .Site.Title }} - Logo">
+<img src="{{ "images/logo.svg" | relURL }}" alt="{{ .Site.Title }} - Logo">
 
 <p>
 <a href="https://m.me/slangbrain?ref=https%3A%2F%2Fslangbrain.com%2FJapanese.csv">Get started studying Japanase</a>
