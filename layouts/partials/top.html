@@ -1,8 +1,26 @@
 <html lang="{{ .Site.Language.Lang }}">
   <head>
 		<title>{{ .Site.Title }}</title>
+
     <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+
+    <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+    {{- template "_internal/opengraph.html" . -}}
+    {{- template "_internal/twitter_cards.html" . -}}
+    {{- template "_internal/google_news.html" . -}}
+    {{- template "_internal/schema.html" . -}}
+
+    {{ with  .OutputFormats.Get "css" }}
+      <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink |  safeURL }}">
+    {{ end }}
+    <link href="https://fonts.googleapis.com/css?family=Contrail+One|Rubik|Nunito" rel="stylesheet">
   </head>
+
   <body>
     <header>
       {{ if not .IsHome }}
@@ -15,15 +33,17 @@
         <a href="{{ .Section | relLangURL }}">{{ with .Site.GetPage "section" .Section }}{{ .Title }}{{ end }}</a>
       {{ end }}
 
+      <div class="translations">
       {{ if .IsTranslated }}
         {{ range .Translations }}
-          <a href="{{ .Permalink }}">{{ .Lang }}</a>
+          <a href="{{ .Permalink }}"><span>{{ .Lang }}</span></a>
         {{ end }}
       {{ else }}
         {{ range .Site.Languages }}
           {{ if ne . $.Language }}
-            <a href="{{ printf "%s/%s" .Lang $.Section | relURL }}">{{ . }}</a>
+            <a href="{{ printf "%s/%s" .Lang $.Section | relURL }}"><span>{{ . }}</span></a>
           {{ end }}
         {{ end }}
 			{{ end }}
+      </div>
     </header>

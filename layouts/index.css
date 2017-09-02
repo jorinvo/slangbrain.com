@@ -1,0 +1,97 @@
+{{ $pink := "rgb(255, 0, 150)" }}
+{{ $fontLogo := "font-family: 'Contrail One', cursive;" }}
+{{ $fontSecond := "font-family: 'Rubik', cursive;" }}
+{{ $fontText := "font-family: 'Nunito', cursive;" }}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  color: black;
+  {{ $fontText }}
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+}
+
+.translations {
+  text-align: right;
+}
+
+.translations a {
+  display: inline-block;
+  padding: 2% 3% 2.5% 3%;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 500;
+}
+
+.intro {
+  background-color: black;
+  background: url('{{ "images/intro.jpg" | relURL }}') no-repeat center center;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+  height: 100vh;
+  color: white;
+  text-align: center;
+}
+
+.intro .inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+
+.intro h1 {
+  font-size: 16vw;
+  margin: 1vh 0;
+  color: {{ $pink }};
+  {{ $fontLogo }}
+}
+
+.intro h2 {
+  {{ $fontSecond }}
+  font-size: 130%;
+  margin-top: 3vw;
+  margin-bottom: 15vw;
+}
+@media screen and (min-width: 720px) {
+  .intro h2 {
+    font-size: 170%;
+    margin-top: 1vw;
+    margin-bottom: 6vw;
+  }
+}
+
+.logo {
+  fill: {{ $pink }};
+  width: 12vw;
+  min-width: 16%;
+  height: 12vh;
+}
+
+.getstarted {
+  background: {{ $pink }};
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 160%;
+  padding: .4em .7em;
+  {{ $fontLogo }}
+  cursor: pointer;
+}
+.getstarted:hover {
+  color: {{ $pink }};
+  background: white;
+}

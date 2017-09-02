@@ -1,0 +1,5 @@
+{
+  "url": "{{ .Permalink }}",
+  "title": {{ .Title | jsonify }},
+  "content": {{ .Content | jsonify }}
+}

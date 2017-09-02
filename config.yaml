@@ -1,7 +1,22 @@
 baseURL: "http://slangbrain.com/"
-languageCode: "en-us"
 copyright: "© 2017 Jorin Vogel"
 title: "Slangbrain"
+
+outputs:
+  home:
+  - html
+  - amp
+  - rss
+  - css
+  page:
+  - html
+  - amp
+  - json
+
+enablerobotstxt: true
+
+params:
+  boturl: "https://m.me/slangbrain"
 
 Languages:
   en:
