@@ -204,8 +204,8 @@ header {
 }
 
 footer {
-  padding-top: 16%;
-  padding-bottom: 2%;
+  padding-top: 12%;
+  padding-bottom: 1%;
   text-align: center;
   color: white;
 }
@@ -213,4 +213,10 @@ footer {
 footer a {
   color: white;
   padding: 1% 1%;
+}
+
+.copy {
+  padding-top: 2%;
+  font-size: 80%;
+  opacity: .8;
 }
