@@ -10,6 +10,18 @@
     </a>
 </section>
 
+<section class="bullets">
+  <ul>
+    {{ range $i, $b := .Params.Bullets }}
+      <li>
+        {{/*<img src="{{ printf "images/home/bullet%d.png" $i | relURL }}" alt="Screenshot">*/}}
+        <div></div>
+        <p>{{$b}}</p>
+      </li>
+    {{ end }}
+  </ul>
+</section>
+
 <section>
   <h3>{{ .Params.Fromcollection }}</h3>
   <a href="https://m.me/slangbrain?ref=https%3A%2F%2Fslangbrain.com%2Fcollections%2FGerman.csv">German</a>
@@ -18,19 +30,22 @@
   <a href="https://m.me/slangbrain?ref=https%3A%2F%2Fslangbrain.com%2Fcollections%2FThai.csv">Thai</a>
 </section>
 
-<section>
+<section class="blogref">
   <a href="{{ "blog/" | relLangURL }}">
     <h3>{{ .Params.Moreblog }}</h3>
   </a>
-  {{ range where .Data.Pages "Section" "blog" }}
-  <article>
-    <a href="{{ .Permalink }}">
-      <h2>{{ .Title }}</h2>
-      <img src="{{ .Site.BaseURL }}/images/headers/{{ .File.TranslationBaseName }}.small.jpg">
-      <p>{{ .Params.summary }}</p>
-    </a>
-  </article>
-  {{ end }}
+  <div class="list">
+    {{ range where .Data.Pages "Section" "blog" }}
+    <article>
+      <a
+        href="{{ .Permalink }}"
+        style="background-image: url('{{ .Site.BaseURL }}/images/headers/{{ .File.TranslationBaseName }}.small.jpg');"
+      >
+        <h4>{{ .Title }}</h4>
+      </a>
+    </article>
+    {{ end }}
+  <div>
 </section>
 
 {{ partial "bottom" . }}

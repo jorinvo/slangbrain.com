@@ -1,4 +1,5 @@
 {{ $pink := "rgb(255, 0, 150)" }}
+{{ $black := "#121212" }}
 {{ $fontLogo := "font-family: 'Contrail One', cursive;" }}
 {{ $fontSecond := "font-family: 'Rubik', cursive;" }}
 {{ $fontText := "font-family: 'Nunito', cursive;" }}
@@ -7,13 +8,18 @@
 html, body {
   margin: 0;
   padding: 0;
-  color: black;
+  color: white;
   {{ $fontText }}
+  background-color: {{ $black }};
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: white;
+}
+
+ul {
+  list-style: none;
 }
 
 header {
@@ -34,8 +40,7 @@ header {
 }
 
 .intro {
-  background-color: black;
-  background: url('{{ "images/intro.jpg" | relURL }}') no-repeat center center;
+  background: url('{{ "images/home/intro.jpg" | relURL }}') no-repeat center center;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
@@ -94,4 +99,118 @@ header {
 .getstarted:hover {
   color: {{ $pink }};
   background: white;
+}
+
+.bullets ul {
+  padding: 0 6%;
+}
+
+.bullets div {
+  background: {{ $pink }};
+  width: 160px;
+  height: 160px;
+  margin: 8% auto 0 auto;
+}
+
+.bullets li {
+  box-sizing: border-box;
+}
+.bullets li:nth-child(2n+1):last-child {
+  width: 100%;
+}
+
+.bullets p {
+  padding: 4% 0;
+  width: 260px;
+  margin: 0 auto 8% auto;
+  text-align: center;
+}
+
+
+@media screen and (min-width: 860px) {
+  .bullets ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .bullets li {
+    width: 50%;
+  }
+
+  .bullets p {
+  }
+}
+
+.blogref .list {
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+}
+
+.blogref article {
+  text-align: center;
+}
+
+@media screen and (min-width: 720px) {
+  .blogref article {
+    width: 50%;
+    float: left;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .blogref article {
+    width: 33.33333%;
+  }
+}
+
+.blogref article a {
+  background: no-repeat center center;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   height: 300px;
+   width: 100%;
+   position: relative;
+   display: block;
+}
+.blogref article a:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: .6;
+  transition: .4s opacity ease-out;
+}
+.blogref article a:hover:before {
+  opacity: .2;
+}
+.blogref:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+.blogref h4 {
+  font-size: 150%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  margin: 0;
+}
+
+footer {
+  padding-top: 16%;
+  padding-bottom: 2%;
+  text-align: center;
+  color: white;
+}
+
+footer a {
+  color: white;
+  padding: 1% 1%;
 }
