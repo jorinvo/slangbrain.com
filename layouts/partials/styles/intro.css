@@ -19,7 +19,7 @@
 }
 
 .intro h1 {
-  font-size: 16vw;
+  font-size: 18vw;
   margin: 1% 0;
   color: {{ .Scratch.Get "pink" }};
   {{ .Scratch.Get "fontLogo" }}
@@ -31,7 +31,11 @@
   margin-top: 3vw;
   margin-bottom: 15vw;
 }
+
 @media screen and (min-width: 720px) {
+  .intro h1 {
+    font-size: 16vw;
+  }
   .intro h2 {
     font-size: 170%;
     margin-top: 1vw;
@@ -44,7 +48,7 @@
 .logo {
   fill: {{ .Scratch.Get "pink" }};
   width: 12vw;
-  min-width: 16%;
+  min-width: 26%;
   height: 14vh;
 }
 
