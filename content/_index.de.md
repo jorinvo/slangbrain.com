@@ -1,6 +1,6 @@
 ---
-slogan: lerne sprache wie es zu dir passt direkt in facebook messenger
-getstarted: Fange jetzt an
-moreblog: Lese mehr auf unserem Blog
-fromcollection: Beginne mit einer einer Liste von unseren Lieblingswörtern
+Slogan: Lerne Sprache wie es zu dir passt, und direkt in Facebook Messenger
+Getstarted: Jetzt anfangen
+Moreblog: Lese mehr auf unserem Blog
+Fromcollection: Beginne mit einer einer Liste von unseren Lieblingswörtern
 ---

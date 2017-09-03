@@ -15,9 +15,7 @@
     {{- template "_internal/google_news.html" . -}}
     {{- template "_internal/schema.html" . -}}
 
-    {{ with  .OutputFormats.Get "css" }}
-      <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink |  safeURL }}">
-    {{ end }}
+    <link rel="stylesheet" type="text/css" href="{{ "styles.css" | relURL }}">
     <link href="https://fonts.googleapis.com/css?family=Contrail+One|Rubik|Nunito" rel="stylesheet">
   </head>
 

@@ -1,8 +1,8 @@
-{{ $pink := "rgb(255, 0, 150)" }}
+{{ $pink := "#ff0096" }}
 {{ $black := "#121212" }}
-{{ $fontLogo := "font-family: 'Contrail One', cursive;" }}
-{{ $fontSecond := "font-family: 'Rubik', cursive;" }}
-{{ $fontText := "font-family: 'Nunito', cursive;" }}
+{{ $fontLogo := "font-family: 'Contrail One';" }}
+{{ $fontSecond := "font-family: 'Rubik';" }}
+{{ $fontText := "font-family: 'Nunito';" }}
 
 
 html, body {
@@ -24,6 +24,7 @@ ul {
 
 header {
   position: fixed;
+  z-index: 1;
   width: 100%;
 }
 
@@ -60,7 +61,7 @@ header {
 
 .intro h1 {
   font-size: 16vw;
-  margin: 1vh 0;
+  margin: 1% 0;
   color: {{ $pink }};
   {{ $fontLogo }}
 }
@@ -213,6 +214,10 @@ footer {
 footer a {
   color: white;
   padding: 1% 1%;
+}
+
+footer svg {
+  vertical-align: middle;
 }
 
 .copy {
