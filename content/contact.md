@@ -2,5 +2,4 @@
 title: "Contact"
 ---
 
-<a href="mailto:contact@slangbrain.com">mail@slangbrain.com</a>
-
+{{% file "readme.md" %}}
