@@ -1,5 +1,6 @@
 {{ partial "top" . }}
 
+
 <section class="intro">
   <div class="inner">
     <img src="{{ "images/logo.svg" | relURL }}" class="logo" alt="Logo">
@@ -10,17 +11,18 @@
     </a>
 </section>
 
+
 <section class="bullets">
   <ul>
-    {{ range $i, $b := .Params.Bullets }}
+    {{ range first 3 .Params.Bullets }}
       <li>
-        {{/*<img src="{{ printf "images/home/bullet%d.png" $i | relURL }}" alt="Screenshot">*/}}
-        <div></div>
-        <p>{{$b}}</p>
+        <img src="{{ printf "images/icons/%s.svg" .Icon | relURL }}" alt="{{ .Icon }}">
+        <p>{{ .Text }}</p>
       </li>
     {{ end }}
   </ul>
 </section>
+
 
 <section class="fromcollection">
   <h3>{{ .Params.Fromcollection }}</h3>
@@ -34,6 +36,19 @@
     {{ end }}
   </ul>
 </section>
+
+
+<section class="bullets">
+  <ul>
+    {{ range last 3 .Params.Bullets }}
+      <li>
+        <img src="{{ printf "images/icons/%s.svg" .Icon | relURL }}" alt="{{ .Icon }}">
+        <p>{{ .Text }}</p>
+      </li>
+    {{ end }}
+  </ul>
+</section>
+
 
 <section class="blogref">
   <a href="{{ "blog/" | relLangURL }}">
@@ -52,5 +67,6 @@
     {{ end }}
   <div>
 </section>
+
 
 {{ partial "bottom" . }}

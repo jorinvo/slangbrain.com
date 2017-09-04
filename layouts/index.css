@@ -1,6 +1,6 @@
 {{ .Scratch.Add "pink" "#ff207e" }}
 {{ .Scratch.Add "black" "#121212" }}
-{{ .Scratch.Add "white" "#f3f3f3" }}
+{{ .Scratch.Add "white" "#fdfdfa" }}
 {{ .Scratch.Add "fontLogo" "font-family: 'Contrail One';" }}
 {{ .Scratch.Add "fontSecond" "font-family: 'Rubik';" }}
 {{ .Scratch.Add "fontText" "font-family: 'Nunito';" }}
@@ -12,11 +12,12 @@ html, body {
   padding: 0;
   {{ .Scratch.Get "fontText" }}
   background-color: {{ .Scratch.Get "white" }};
+  color: {{ .Scratch.Get "black" }};
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: {{ .Scratch.Get "black" }};
 }
 
 ul {
@@ -25,9 +26,30 @@ ul {
 }
 
 h3 {
+  margin: 0;
+  padding: 10% 4%;
   text-align: center;
   font-size: 220%;
-  padding: 3%;
+}
+@media screen and (min-width: 860px) {
+  h3 {
+    padding: 6% 4%;
+  }
+}
+
+button {
+  background: {{ .Scratch.Get "pink" }};
+  color: {{ .Scratch.Get "white" }};
+  border: none;
+  border-radius: 6px;
+  font-size: 160%;
+  padding: .4em .7em;
+  {{ .Scratch.Get "fontLogo" }}
+  cursor: pointer;
+}
+button:hover {
+  color: {{ .Scratch.Get "pink" }};
+  background: {{ .Scratch.Get "white" }};
 }
 
 header {
