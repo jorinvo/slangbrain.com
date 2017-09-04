@@ -1,6 +1,6 @@
 ---
 Slogan:         study language your way, right in facebook messenger
-Getstarted:     Get started studying
+Getstarted:     Go to Messenger
 Moreblog:       Find out more
 Fromcollection: Start with a collection of words in your favorite language
 Bullets:

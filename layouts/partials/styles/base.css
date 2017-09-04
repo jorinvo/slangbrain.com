@@ -1,0 +1,110 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  {{ .Scratch.Get "fontText" }}
+  background-color: {{ .Scratch.Get "white" }};
+  color: {{ .Scratch.Get "black" }};
+}
+
+a {
+  text-decoration: none;
+  color: {{ .Scratch.Get "black" }};
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 200%;
+  {{ .Scratch.Get "fontLogo" }}
+}
+
+h3 {
+  margin: 0;
+  padding: 10% 4%;
+  text-align: center;
+  font-size: 220%;
+}
+@media screen and (min-width: 860px) {
+  h3 {
+    padding: 6% 4%;
+  }
+}
+
+button {
+  background: {{ .Scratch.Get "pink" }};
+  color: {{ .Scratch.Get "white" }};
+  border: none;
+  border-radius: 6px;
+  font-size: 160%;
+  padding: .4em .7em;
+  {{ .Scratch.Get "fontLogo" }}
+  cursor: pointer;
+}
+button:hover {
+  color: {{ .Scratch.Get "pink" }};
+  background: {{ .Scratch.Get "white" }};
+}
+
+header {
+  color: {{ .Scratch.Get "white" }};
+  background: {{ .Scratch.Get "black" }};
+  padding: 14px;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 100%;
+  position: relative;
+}
+
+header a {
+  color: {{ .Scratch.Get "white" }};
+}
+
+header .logo {
+  position: absolute;
+  height: 66%;
+  left: 1%;
+}
+
+header .title {
+  font-size: 300%;
+  font-family: Contrail One;
+  line-height: 100%;
+}
+
+.translations {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
+
+.translations a {
+  text-transform: uppercase;
+}
+
+footer {
+  background-color: {{ .Scratch.Get "black" }};
+  padding-top: 12%;
+  padding-bottom: 1%;
+  text-align: center;
+  color: {{ .Scratch.Get "white" }};
+}
+
+footer a {
+  color: {{ .Scratch.Get "white" }};
+  padding: 1% 1%;
+}
+
+footer svg {
+  vertical-align: middle;
+}
+
+.copy {
+  padding-top: 2%;
+  font-size: 80%;
+  opacity: .8;
+}

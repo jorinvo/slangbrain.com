@@ -1,10 +1,6 @@
 {{ partial "top" . }}
 
-<a href="{{ .Permalink }}">
-  <h1>{{ .Title }}</h1>
-</a>
-
-<section>
+<section class="content">
   {{ range .Data.Pages }}
   <article>
     <a href="{{ .Permalink }}">

@@ -1,8 +1,15 @@
-section:nth-of-type(odd) {
+.home header {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  background: none;
+}
+
+.home section:nth-of-type(odd) {
   background-color: {{ .Scratch.Get "black" }};
   color: {{ .Scratch.Get "white" }};
 }
-section:nth-of-type(odd) a {
+.home section:nth-of-type(odd) a {
   color: {{ .Scratch.Get "white" }};
 }
 
@@ -29,7 +36,6 @@ section:nth-of-type(odd) a {
   font-size: 18vw;
   margin: 1% 0;
   color: {{ .Scratch.Get "pink" }};
-  {{ .Scratch.Get "fontLogo" }}
 }
 
 .intro h2 {
@@ -52,7 +58,7 @@ section:nth-of-type(odd) a {
 
 
 
-.logo {
+.intro .logo {
   width: 12vw;
   min-width: 26%;
   height: 14vh;
@@ -90,8 +96,15 @@ section:nth-of-type(odd) a {
 .fromcollection {
   padding-bottom: 8%;
 }
+.fromcollection h3 {
+  padding-bottom: 4%;
+}
 
 @media screen and (min-width: 860px) {
+  .fromcollection {
+    padding-bottom: 6%;
+  }
+
   .fromcollection ul {
     padding: 0 16vw;
     display: flex;
@@ -101,8 +114,7 @@ section:nth-of-type(odd) a {
 
 .fromcollection li {
   text-align: center;
-  margin: 2% auto;
-  padding: 2vw;
+  margin: 8% auto;
 }
 
 

@@ -1,3 +1,5 @@
+## Hello
+
 Reach us at [mail@slangbrain.com](mailto:mail@slangbrain.com).
 
 We are happy to get feedback or hear about your feature suggestions in the [GitHub issues](https://github.com/qvl/slangbrain.com/issues) section.
@@ -13,4 +15,4 @@ Also credits to the incredible [Unsplash](https://unsplash.com/collections/11357
 and [GraphicsMagick](http://www.graphicsmagick.org/) for helping us processing images.
 
 
-© 2017 Jorin Vogel
+*© 2017 Jorin Vogel*

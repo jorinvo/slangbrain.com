@@ -1,9 +1,15 @@
 {{ partial "top" . }}
 
-<a href="{{ .Permalink }}">
-  <h1>{{ .Title }}</h1>
-</a>
+<section class="content">
+  {{ if .Section }}
+    <a href="{{ .Permalink }}">
+      <h1>{{ .Title }}</h1>
+    </a>
+  {{ end }}
 
-<article>{{ .Content }}</article>
+  <img src="{{ .Site.BaseURL }}/images/headers/{{ .File.TranslationBaseName }}.jpg" alt="post header image" class="header-image">
+
+  <article>{{ .Content }}</article>
+</section>
 
 {{ partial "bottom" . }}

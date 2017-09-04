@@ -1,0 +1,14 @@
+.content {
+  margin: 6% auto;
+  max-width: 620px;
+  min-height: 90vh;
+  text-align: justify;
+}
+
+.content article a {
+  text-decoration: underline;
+}
+
+.header-image {
+  display: none;
+}

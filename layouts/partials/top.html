@@ -1,6 +1,6 @@
 <html lang="{{ .Site.Language.Lang }}">
   <head>
-		<title>{{ .Site.Title }}</title>
+    <title>{{ if .Title }}{{ .Title }} » {{ end }}{{ .Site.Title }}</title>
 
     <meta charset="utf-8">
 
@@ -22,16 +22,18 @@
     <link href="https://fonts.googleapis.com/css?family=Contrail+One|Rubik|Nunito" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="{{ if .IsHome }}home{{ end }}">
     <header>
       {{ if not .IsHome }}
         <a href="{{ "/" | relLangURL }}">
-          <img src="{{ "images/logo.svg" | relURL }}" alt="{{ .Site.Title }} - Logo">
+          <img src="{{ "images/logo.svg" | relURL }}" alt="{{ .Site.Title }} - Logo" class="logo">
         </a>
       {{ end }}
 
       {{ if and .IsPage .Section }}
-        <a href="{{ .Section | relLangURL }}">{{ with .Site.GetPage "section" .Section }}{{ .Title }}{{ end }}</a>
+        <a class="title" href="{{ .Section | relLangURL }}">{{ with .Site.GetPage "section" .Section }}{{ .Title }}{{ end }}</a>
+      {{ else if not .IsHome }}
+        <a class="title" href="{{ .Permalink }}">{{ .Title }}</a>
       {{ end }}
 
       <div class="translations">
