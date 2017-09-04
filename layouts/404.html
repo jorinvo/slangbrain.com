@@ -1,7 +1,14 @@
 {{ partial "top" . }}
 
-<h1>Something went wrong</h1>
+<section class="content">
+  <article>
+    <h1>Something went wrong</h1>
+  </article>
 
-<a href="{{ .Site.BaseURL }}">Go back</a>
+  <a href="{{ .Site.BaseURL }}">
+    <button>Go back</button>
+  </a>
+</section>
+
 
 {{ partial "bottom" . }}

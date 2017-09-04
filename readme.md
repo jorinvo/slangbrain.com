@@ -15,4 +15,4 @@ Also credits to the incredible [Unsplash](https://unsplash.com/collections/11357
 and [GraphicsMagick](http://www.graphicsmagick.org/) for helping us processing images.
 
 
-*© 2017 Jorin Vogel*
+*© 2017 [Jorin Vogel](https://jorin.me)*
