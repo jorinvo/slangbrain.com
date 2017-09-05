@@ -1,0 +1,22 @@
+.list .header-image {
+  height: 150px;
+  background: no-repeat center center;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+.list .item {
+  margin: 12% 0;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.list .text {
+  padding: 2% 6% 6% 6%;
+}
+
+.list p {
+  margin: 0;
+}

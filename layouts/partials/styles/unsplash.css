@@ -1,0 +1,30 @@
+.unsplash {
+  text-align: center;
+  padding-bottom: 14%;
+}
+
+.unsplash a {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 4px 6px;
+  font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Helvetica Neue', Helvetica, Ubuntu, Roboto, Noto, 'Segoe UI', Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.2;
+  border-radius: 3px;
+}
+
+.unsplash span {
+  display: inline-block;
+  padding: 2px 3px;
+}
+
+.unsplash svg {
+  height: 12px;
+  width: auto;
+  position: relative;
+  vertical-align: middle;
+  top: -1px;
+  fill: white;
+}

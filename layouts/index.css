@@ -2,3 +2,5 @@
 {{ partial "styles/base.css" . }}
 {{ partial "styles/home.css" . }}
 {{ partial "styles/content.css" . }}
+{{ partial "styles/list.css" . }}
+{{ partial "styles/unsplash.css" . }}

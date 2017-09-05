@@ -1,17 +1,22 @@
 {{ partial "top" . }}
 
+
 <section class="content">
-  {{ range .Data.Pages }}
-  <article>
-    <a href="{{ .Permalink }}">
-      <h2>{{ .Title }}</h2>
-      <img src="{{ .Site.BaseURL }}/images/headers/{{ .File.TranslationBaseName }}.small.jpg">
-      <p>{{ .Params.summary }}</p>
-    </a>
-  </article>
-  {{ end }}
+  <div class="list">
+    {{ range .Data.Pages }}
+      <div class="item">
+        <a href="{{ .Permalink }}">
+          <div class="header-image" style="background-image: url('{{ .Site.BaseURL }}/images/headers/{{ .File.TranslationBaseName }}.small.jpg');"></div>
+          <div class="text">
+            <h2>{{ .Title }}</h2>
+            <p>{{ .Summary }}</p>
+          </div>
+        </a>
+      </div>
+    {{ end }}
+  </div>
 </section>
 
-<a href="index.xml">RSS</a>
+
 {{ partial "bottom" . }}
 

@@ -1,16 +1,32 @@
 .content {
-  margin: 6% auto;
-  max-width: 620px;
+  margin: 0 auto;
+  width: 84%;
+  max-width: 580px;
   min-height: 90vh;
   text-align: justify;
 }
 
-.content article a {
-  text-decoration: underline;
+.content h1 {
+  margin: 10% 0;
 }
 
-.header-image {
-  display: none;
+.content img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.content article {
+  padding-top: 6%;
+  padding-bottom: 10%;
+}
+
+.content article h2 {
+  text-align: left;
+  margin-top: 10%;
+}
+
+.content article a {
+  text-decoration: underline;
 }
 
 .content button {

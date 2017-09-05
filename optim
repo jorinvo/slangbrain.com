@@ -8,7 +8,7 @@ set -e
 
 headers_dir="static/images/headers"
 header_width=860
-small_width=320
+small_width=600
 
 
 

@@ -23,6 +23,16 @@ h1 {
   {{ .Scratch.Get "fontLogo" }}
 }
 
+h2 {
+  text-align: center;
+  font-size: 130%;
+}
+@media screen and (min-width: 720px) {
+  h2 {
+    font-size: 170%;
+  }
+}
+
 h3 {
   margin: 0;
   padding: 10% 4%;
