@@ -59,7 +59,7 @@
     <article>
       <a
         href="{{ .Permalink }}"
-        style="background-image: url('{{ .Site.BaseURL }}/images/headers/{{ .File.TranslationBaseName }}.small.jpg');"
+        style="background-image: url('{{ with .Params.image }}{{ printf "images/%s" . | relURL }}{{ else }}{{ printf "images/headers/%s.small.jpg" .File.TranslationBaseName | relURL }}{{ end }}');"
       >
         <h4>{{ .Title }}</h4>
       </a>

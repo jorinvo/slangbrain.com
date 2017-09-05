@@ -6,7 +6,7 @@
     {{ range .Data.Pages }}
       <div class="item">
         <a href="{{ .Permalink }}">
-          <div class="header-image" style="background-image: url('{{ .Site.BaseURL }}/images/headers/{{ .File.TranslationBaseName }}.small.jpg');"></div>
+          <div class="header-image" style="background-image: url('{{ with .Params.image }}{{ printf "images/%s" . | relURL }}{{ else }}{{ printf "images/headers/%s.small.jpg" .File.TranslationBaseName | relURL }}{{ end }}');"></div>
           <div class="text">
             <h2>{{ .Title }}</h2>
             <p>{{ .Summary }}</p>
