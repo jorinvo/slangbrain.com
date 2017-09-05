@@ -18,18 +18,18 @@ We encourage you to have a look at other resources for studying and we like to s
 
 ## 1. Anki
 
-[![Anki](/images/blog/anki.png)](https://apps.ankiweb.net/)
+[![Anki](/images/blog/apps/anki.png)](https://apps.ankiweb.net/)
 
 [Anki](https://apps.ankiweb.net/) has been [mentioned before]({{% ref "blog/why-i-created-slangbrain.md" %}}), but is worth it to talk about again here.
 It has a use case similar to Slangbrain, but it offers more customization.
 Some users have put a lot of work into creating great collections of vocabulary which can be found [here](https://ankiweb.net/shared/decks/).
-If you find any interesting Anki decks, but would like to study in Slangbrain, check out your article on [how to import Anki decks into Slakngbrain]({{% ref "blog/how-to-import-phrases-from-anki.md" %}}).
+If you find any interesting Anki decks, but would like to study in Slangbrain, check out your article on [how to import Anki decks into Slangbrain]({{% ref "blog/how-to-import-phrases-from-anki.md" %}}).
 In some cases we would recommend you using Anki though, because certain Decks come with audio readings of the vocabulary.
 
 
 ## 2. Duolingo
 
-[![Duolingo](/images/blog/duolingo.png)](https://www.duolingo.com/)
+[![Duolingo](/images/blog/apps/duolingo.png)](https://www.duolingo.com/)
 
 [Duolingo](https://www.duolingo.com/) is a well-made application that offers free language course, which guide you through the basics of a variety of language in a playful way.
 If you just started learning a new language, we highly recommend you to have a look if Duolingo offers any courses for the language.
@@ -38,7 +38,7 @@ They put a lot of effort into gathering useful vocabulary in fun courses. Using 
 
 ## 3. Memrise
 
-[![Memrise](/images/blog/memrise.png)](https://www.memrise.com/home/)
+[![Memrise](/images/blog/apps/memrise.png)](https://www.memrise.com/home/)
 
 [Memrise](https://www.memrise.com/home/) feels in many ways similar to Duolingo.
 They also offer free courses for many languages and we recommend you giving it a try.

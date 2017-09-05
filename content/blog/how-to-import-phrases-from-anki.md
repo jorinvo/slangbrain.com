@@ -5,4 +5,38 @@ draft: true
 unsplash: adrianpelletier Adrian Pelletier
 ---
 
-At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+It is completely fine to use Anki alongside Slangbrain.
+Anki also comes with some features such as audio reading, which Slangbrain doesn't have.
+But if you have a Deck full of vocabulary in Anki which you would rather study in Slangbrain, that is really simple to achieve.
+
+**Let's see how this works three simple steps:**
+<br>
+*(You should do this on your computer, not your phone)*
+
+## 1. Select Export
+
+{{% figure alt="click export on an Anki deck" src="/images/blog/anki/anki-export-1.png" %}}
+
+Open Anki, click the settings wheel on the right side of a deck and select *Export*.
+
+## 2. Export as Notes
+
+{{% figure alt="export as notes" src="/images/blog/anki/anki-export-2.png" %}}
+
+Now you need to select *Notes in Plain Text* as *Export format*, then click *Export…* and save the file to a location where you can find it.
+
+## 3. Drag Into Messenger
+
+{{% figure alt="drag&drop file into messenger" src="/images/blog/anki/anki-import.png" %}}
+
+Then you open [Slangbrain in Messenger](https://www.messenger.com/t/slangbrain) (by clicking here), you can drag&drop the *.txt* file you exported from Anki right into Messenger, and you simply confirm the import with the *yes* button.
+
+
+That's all!
+
+Don't worry about accidentally importing the same words twice, Slangbrain will catch that for you.
+And if you ever import something wrong, you can always *manage your phrase* in the *help* menu.
+
+
+{{% figure alt="drag&drop file into messenger" src="/images/blog/anki/help-menu.png" %}}
+

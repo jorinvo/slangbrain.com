@@ -45,6 +45,10 @@ h3 {
   }
 }
 
+figure {
+  text-align: center;
+}
+
 button {
   background: {{ .Scratch.Get "pink" }};
   color: {{ .Scratch.Get "white" }};

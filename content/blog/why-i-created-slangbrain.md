@@ -38,7 +38,7 @@ Of course, Slangbrain is not the first attempt to solve this problem.
 I highly encourage you to have a look at [Anki](https://apps.ankiweb.net/),
 which is a great and flexible application to study your own vocabulary.
 I even suggest you to use both applications, each for the parts of your studies where you feel most comfortable.
-[Combining different ways of learning]({{% ref "blog/best-apps-to-use-together-with-slangbrain.md" %}}) can help you improve the efficiency of your studies.
+[Combining different ways of learning]({{% ref "blog/resources-to-use-together-with-slangbrain.md" %}}) can help you improve the efficiency of your studies.
 
 Anki comes with many settings for fine-tuning your study experience and people found many [creative ways](https://ankiweb.net/shared/decks/) to use it.
 You should make use of them. Maybe you even see a good way to [combine it with Slangbrain]({{% ref "blog/how-to-import-phrases-from-anki.md" %}}).

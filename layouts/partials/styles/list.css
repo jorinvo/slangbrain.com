@@ -18,16 +18,17 @@
   position: relative;
 }
 .list .text:before {
-    content: '';
-    display:block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    -webkit-box-shadow: inset 0 -110px 30px -50px white;
-    -moz-box-shadow: inset 0 -110px 30px -50px white;
-    box-shadow: inset 0 -110px 30px -50px white;
+  content: '';
+  display:block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 -130px 30px -50px white;
+  -moz-box-shadow: inset 0 -130px 30px -50px white;
+  box-shadow: inset 0 -130px 30px -50px white;
 }
 
 .list p {
