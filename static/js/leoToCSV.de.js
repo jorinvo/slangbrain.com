@@ -7,7 +7,7 @@ var domain = 'https://dict.leo.org/trainer/manageFolder.php'
 var data = []
 
 function cell(el) {
-  return '"' + el.innerText.replace(/"/g,'\\"') + '"'
+  return '"' + el.innerText.replace(/"/g,"'") + '"'
 }
 
 function addRows() {
@@ -53,11 +53,11 @@ function download() {
   document.body.removeChild(downloadLink)
 }
 
-if (window.location.href !== domain) {
+if (window.location.href === domain && (!document.getElementById('usersNickName') || document.getElementById('usersNickName').innerText === '')) {
+  alert('Du musst eingeloggt sein um Vokabeln zu exportieren.')
+} else if (window.location.href !== domain) {
   alert('Du wirst auf die richtige Seite weitergeleitet. Bitte starte das Bookmarklet dort noch einmal.')
   window.location = domain
-} else if (!document.getElementById('usersNickName') || document.getElementById('usersNickName').innerText === '') {
-  alert('Du musst eingeloggt sein um Vokabeln zu exportieren.')
 } else {
   toFirstPage()
 }

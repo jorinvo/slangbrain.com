@@ -2,4 +2,4 @@
 title: "Contact"
 ---
 
-{{% file "readme.md" %}}
+{{% readmarkdown "readme.md" %}}

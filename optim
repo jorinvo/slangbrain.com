@@ -23,6 +23,7 @@ done | gm batch -echo on -
 
 
 
-echo optimizing js ...
+echo minifying js ...
 
-uglify -s static/js/leoToCSV.js -o static/js/leoToCSV.min.js > /dev/null
+uglify -s static/js/leoToCSV.en.js -o static/js/leoToCSV.en.min.js > /dev/null
+uglify -s static/js/leoToCSV.de.js -o static/js/leoToCSV.de.min.js > /dev/null
