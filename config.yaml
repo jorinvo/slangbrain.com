@@ -18,10 +18,11 @@ enablerobotstxt: true
 params:
   boturl: "https://m.me/slangbrain"
   langicons:
-    german: 🇩🇪
-    swedish: 🇸🇪
-    japanese: 🇯🇵
-    thai: 🇹🇭
+    gb: 🇬🇧
+    de: 🇩🇪
+    se: 🇸🇪
+    jp: 🇯🇵
+    th: 🇹🇭
 
 Languages:
   en:

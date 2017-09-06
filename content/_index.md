@@ -8,7 +8,7 @@ Bullets:
   Icon: heart
 - Text: Learn any phrase, in any language. Remember things the way you actually use them instead of learning single words.
   Icon: star
-- Text: No need to register or download any app, just chat with Slangbrain right in Messenger.
+- Text: No need to register or download any app, just chat with Slangbrain right in Facebook Messenger.
   Icon: box
 - Text: Slangbrain is not another language course, use it together with other apps.
   Icon: anchor
@@ -17,8 +17,12 @@ Bullets:
 - Text: It is all free to use.
   Icon: zap
 Collections:
-- German
-- Swedish
-- Japanese
-- Thai
+- Name: German
+  Icon: de
+- Name: Swedish
+  Icon: se
+- Name: Japanese
+  Icon: jp
+- Name: Thai
+  Icon: th
 ---

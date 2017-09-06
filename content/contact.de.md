@@ -1,5 +1,6 @@
 ---
 title: "Kontakt"
+slug: kontakt
 ---
 
 ## Hallo

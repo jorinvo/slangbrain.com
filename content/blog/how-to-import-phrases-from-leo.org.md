@@ -24,7 +24,7 @@ Unfortunately leo.org doesn't offer a way for developers to automatically get yo
 1. First, we assume here, that you have an account on leo.org, you already saved a few words and you are using a computer, not your phone, in the following steps.
 
 
-2. The link below is a *bookmarklet* you can drag that link to the *bookmark toolbar* of your browser or, if you are using Firefox, you can also right-click the link and select *Bookmark This Link*.
+2. The link below is a *bookmarklet* you can drag that link to the *bookmark toolbar* of your browser or, if you are using Firefox, you can also right-click the link and select *Bookmark This Link*:
 <br><br>
 **[Leo Export](javascript:{{% file "static/js/leoToCSV.en.min.js" %}})**
 <br><br>

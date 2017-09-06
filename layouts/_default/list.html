@@ -10,12 +10,15 @@
           <div class="text">
             <h2>{{ .Title }}</h2>
             <p>{{ .Summary }}</p>
-            <div class="hider"></div>
           </div>
         </a>
       </div>
     {{ end }}
   </div>
+
+  {{ with .Content }}
+    <article>{{ . }}</article>
+  {{ end }}
 </section>
 
 

@@ -29,8 +29,8 @@
   <ul>
     {{ range .Params.Collections }}
       <li>
-        <a href="{{ $.Site.Params.boturl }}?ref=https%3A%2F%2Fslangbrain.com%2Fcollections%2F{{ . }}.csv">
-          <button>{{ .}} {{ lower . | index $.Site.Params.langicons }}</button>
+        <a href="{{ $.Site.Params.boturl }}?ref=https%3A%2F%2Fslangbrain.com%2Fcollections%2F{{ .Name }}.csv">
+          <button>{{ .Name}} {{ index $.Site.Params.langicons .Icon }}</button>
         </a>
       </li>
     {{ end }}
@@ -54,18 +54,21 @@
   <a href="{{ "blog/" | relLangURL }}">
     <h3>{{ .Params.Moreblog }}</h3>
   </a>
-  <div class="list">
-    {{ range first 6 (where .Data.Pages "Section" "blog").ByDate }}
-    <article>
-      <a
-        href="{{ .Permalink }}"
-        style="background-image: url('{{ with .Params.image }}{{ printf "images/%s" . | relURL }}{{ else }}{{ printf "images/headers/%s.small.jpg" .File.TranslationBaseName | relURL }}{{ end }}');"
-      >
-        <h4>{{ .Title }}</h4>
-      </a>
-    </article>
-    {{ end }}
-  <div>
+  {{ $articles := first 6 (where .Data.Pages "Section" "blog").ByDate }}
+  {{ if len $articles | eq 6 }}
+    <div class="list">
+      {{ range $articles }}
+      <article>
+        <a
+          href="{{ .Permalink }}"
+          style="background-image: url('{{ with .Params.image }}{{ printf "images/%s" . | relURL }}{{ else }}{{ printf "images/headers/%s.small.jpg" .File.TranslationBaseName | relURL }}{{ end }}');"
+        >
+          <h4>{{ .Title }}</h4>
+        </a>
+      </article>
+      {{ end }}
+    <div>
+  {{ end }}
 </section>
 
 

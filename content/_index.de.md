@@ -4,21 +4,25 @@ Getstarted: Jetzt anfangen
 Moreblog: Lese mehr auf unserem Blog
 Fromcollection: Beginne mit einer einer Liste von unseren Lieblingswörtern
 Bullets:
-- Text: Slangbrain doesn't tell you what to study, you save what is interesting to you, and Slangbrain simply makes sure you won't ever forget it.
+- Text: Slangbrain schreibt dir nicht vor was du lernen sollst. Du entscheidest was dich interessiert und Slangbrain kümmert sich darum, dass du es nicht vergisst.
   Icon: heart
-- Text: Learn any phrase, in any language. Remember things the way you actually use them instead of learning single words.
+- Text: Lerne Redewendungen die du im Alltag aufschnappst statt eine langweilige List von Vokabeln.
   Icon: star
-- Text: No need to register or download any app, just chat with Slangbrain right in Messenger.
+- Text: Benutze Facebook Messenger statt eine App herunterladen.
   Icon: box
-- Text: Slangbrain is not another language course, use it together with other apps.
+- Text: Nutze Slangbrain zusammen mit deinem Sprachkurs und anderen Apps, die dir gefallen.
   Icon: anchor
-- Text: Slangbrain sends you a message when it's time to review your vocabulary.
+- Text: Slangbrain schickt dir eine Chatnachricht wenn es wieder Zeit zu lernen ist.
   Icon: repeat
-- Text: It is all free to use.
+- Text: Und das Ganze ist komplett kostenlos.
   Icon: zap
 Collections:
-- German
-- Swedish
-- Japanese
-- Thai
+- Name: Englisch
+  Icon: gb
+- Name: Schwedisch
+  Icon: se
+- Name: Japanisch
+  Icon: jp
+- Name: Thailändisch
+  Icon: th
 ---
