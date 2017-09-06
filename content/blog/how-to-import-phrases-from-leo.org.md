@@ -48,3 +48,6 @@ Then you simply confirm the import with the *yes* button.
 
 You might have to do this again once in a while after saving new words on leo.org. But don't worry about duplicated when repeating this.
 Slangbrain will automatically igore all words that you already saved before.
+
+
+I hope this was helpful. If you have any questions or you run into issues, let us know on [Facebook](https://www.facebook.com/slangbrain/).

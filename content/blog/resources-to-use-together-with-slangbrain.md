@@ -67,3 +67,6 @@ You can watch movies, read books and online articles and, most important of all,
 But to get the most out of it, you should still lookup things you don't know, keep notes and memorize the things.
 Even as you reach the point of language studying, that you can use it in the real world, you should keep on learning.
 A tool like [Slangbrain](/) can help you to simplify that challenge.
+
+
+I hope this was helpful. If you have any questions or you would like to recommend any other tools, let us know on [Facebook](https://www.facebook.com/slangbrain/).

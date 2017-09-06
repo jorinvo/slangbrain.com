@@ -49,3 +49,5 @@ You don't have to worry about any setup, you don't even have to register or down
 
 Open the [Messenger bot](https://m.me/slangbrain) and start using Slangbrain.
 
+
+If you have any questions or feedback, let us know on [Facebook](https://www.facebook.com/slangbrain/).

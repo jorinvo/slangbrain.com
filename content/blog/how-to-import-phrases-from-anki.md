@@ -37,6 +37,7 @@ That's all!
 Don't worry about accidentally importing the same words twice, Slangbrain will catch that for you.
 And if you ever import something wrong, you can always *manage your phrase* in the *help* menu.
 
+{{% figure alt="drag&drop file into messenger" src="/images/blog/help-menu.png" %}}
 
-{{% figure alt="drag&drop file into messenger" src="/images/blog/anki/help-menu.png" %}}
 
+I hope this was helpful. If you have any questions, let us know on [Facebook](https://www.facebook.com/slangbrain/).

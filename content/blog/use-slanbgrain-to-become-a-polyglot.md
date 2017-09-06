@@ -17,3 +17,6 @@ But there is a simple solution to this:
 {{% figure alt="same word in multiple languages" src="/images/blog/polyglot.png" %}}
 
 If you need to differentiate multiple language just prefix the explanation of each phrase with a little emoji flag.
+
+
+I hope this was helpful. If you have any questions or feedback, let us know on [Facebook](https://www.facebook.com/slangbrain/).
