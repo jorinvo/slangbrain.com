@@ -107,7 +107,7 @@ header .title {
 footer {
   background-color: {{ .Scratch.Get "black" }};
   padding-top: 12%;
-  padding-bottom: 1%;
+  padding-bottom: 6%;
   text-align: center;
   color: {{ .Scratch.Get "white" }};
 }
@@ -119,10 +119,4 @@ footer a {
 
 footer svg {
   vertical-align: middle;
-}
-
-.copy {
-  padding-top: 2%;
-  font-size: 80%;
-  opacity: .8;
 }

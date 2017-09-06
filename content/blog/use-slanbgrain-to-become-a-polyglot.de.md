@@ -2,7 +2,7 @@
 title: "Use Slanbgrain to Become a Polyglot"
 date: 2017-08-31T18:42:36+02:00
 draft: true
-unsplash: albertdera Albert Dera
+unsplash: archduk Carl Nenzen Loven
 ---
 
 There are many of us that not only learn one, but multiple languages at the same time.
@@ -14,6 +14,6 @@ If this is the case for you and you tried using Slanbgrain for multiple of your 
 But there is a simple solution to this:
 
 
-{{% figure alt="same word in multiple languages" src="/images/blog/polyglot.png" %}}
+{{% figure alt="same word in multiple languages" src="/images/blog/polyglot.de.png" %}}
 
 If you need to differentiate multiple language just prefix the explanation of each phrase with a little emoji flag.
