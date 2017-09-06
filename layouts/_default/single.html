@@ -11,6 +11,12 @@
 
   <article>{{ .Content }}</article>
 
+  {{ if .Section }}
+    <a href="{{ .Section | relLangURL }}">
+      <button>{{ i18n "readmore" }}</button>
+    </a>
+  {{ end }}
+
   {{ partial "unsplash" . }}
 </section>
 

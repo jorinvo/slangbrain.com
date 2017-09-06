@@ -1,15 +1,14 @@
 ---
 title: "How to Import Phrases From Anki"
 date: 2017-08-31T13:06:33+02:00
-draft: true
 unsplash: adrianpelletier Adrian Pelletier
 ---
 
 It is completely fine to use Anki alongside Slangbrain.
-Anki also comes with some features such as audio reading, which Slangbrain doesn't have.
-But if you have a Deck full of vocabulary in Anki which you would rather study in Slangbrain, that is really simple to achieve.
+Anki also comes with some features, such as audio reading, which Slangbrain doesn't have.
+But if you have a deck full of vocabulary in Anki which you would rather study in Slangbrain, that is really simple to achieve.
 
-**Let's see how this works three simple steps:**
+**Let's see how this works in three simple steps:**
 <br>
 *(You should do this on your computer, not your phone)*
 
@@ -29,12 +28,12 @@ Now you need to select *Notes in Plain Text* as *Export format*, then click *Exp
 
 {{% figure alt="drag&drop file into messenger" src="/images/blog/anki/anki-import.png" %}}
 
-Then you open [Slangbrain in Messenger](https://www.messenger.com/t/slangbrain) (by clicking here), you can drag&drop the *.txt* file you exported from Anki right into Messenger, and you simply confirm the import with the *yes* button.
+Lastly you open [Slangbrain in Messenger](https://www.messenger.com/t/slangbrain), drag&drop the *.txt* file you exported from Anki right into Messenger, and simply confirm the import with the *yes* button.
 
 
-That's all!
+That's all.
 
-Don't worry about accidentally importing the same words twice, Slangbrain will catch that for you.
+Don't worry about accidentally importing the same word twice, Slangbrain will catch that for you.
 And if you ever import something wrong, you can always *manage your phrase* in the *help* menu.
 
 {{% figure alt="drag&drop file into messenger" src="/images/blog/help-menu.png" %}}
