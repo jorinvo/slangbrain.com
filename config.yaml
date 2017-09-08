@@ -18,10 +18,10 @@ enablerobotstxt: true
 params:
   boturl: "https://m.me/slangbrain"
   langicons:
-    gb: 🇬🇧
-    de: 🇩🇪
+    gb: ':gb:'
+    de: ':de:'
+    jp: ':jp:'
     se: 🇸🇪
-    jp: 🇯🇵
     th: 🇹🇭
 
 Languages:

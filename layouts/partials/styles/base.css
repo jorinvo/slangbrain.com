@@ -120,10 +120,3 @@ footer a {
 footer svg {
   vertical-align: middle;
 }
-
-@import url('/fonts/NotoEmoji-Regular.ttf');
-
-.emoji {
-  font-family: 'NotoEmoji-Regular';
-
-}
