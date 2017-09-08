@@ -3,7 +3,7 @@ title: "API"
 date: 2017-09-07T17:24:34+02:00
 ---
 
-Slangbrain offers a basic automation API for building tools.
+Slangbrain offers a basic automation JSON API for building tools.
 
 If you run into any issues or you have suggestions for new features,
 please let us know in the [GitHub issues](https://github.com/qvl/slangbrain.com/issues).
@@ -24,15 +24,13 @@ Users can get a token in the help menu:
 {{% figure alt="get token in help menu" src="/images/get-token.png" %}}
 
 
-## Formatting
+## Export phrases from Slangbrain
 
-Import and export use the same format.
-In both cases you have to choose between JSON and CSV by specifying either a `.json` or `.csv` extension.
+To get phrases out of Slangbrain a `GET` request can be send to
 
-For CSV the first column contains phrases and the second one contains their explanations.
-There is no header row.
+- `https://fbot.slangbrain.com/api/phrases.json?token=<token>`
 
-The JSON format returns a response formatted like this:
+and the response will be formatted like this:
 
 ```json
 {
@@ -54,27 +52,42 @@ The JSON format returns a response formatted like this:
 
 The JSON field `"added"` contains an integer representing the number of seconds elapsed since January 1, 1970 UTC.
 
+See above for authentication.
+
 
 ## Import phrases into Slangbrain
 
-To add phrases to Slangbrain a `POST` request can be send to one of:
+To add phrases to Slangbrain a `POST` request can be send to
 
-- `https://fbot.slangbrain.com/api/phrases.csv?token=<token>`
-- `https://fbot.slangbrain.com/api/phrases.json?token=<token>`
+- `https://fbot.slangbrain.com/api/phrases?token=<token>`
 
-See above for authentication and expected formatting.
+with a body containing a JSON object as the following:
 
-For imports, the fields `"id"` and `"score"` are ignored and the field `"added"` is optional and defaults to the current time if not provided.
+```json
+{
+  "data": [
+    {
+      "phrase": "phrase",
+      "explanation": "explanation"
+    },
+    {
+      ...
+    },
+    ...
+  ]
+}
+```
 
+The response will report how many phrases have been imported:
 
-## Export phrases from Slangbrain
+```json
+{
+  "status": "ok",
+  "count": 10
+}
+```
 
-To get phrases out of Slangbrain a `GET` request can be send to one of:
-
-- `https://fbot.slangbrain.com/api/phrases.csv?token=<token>`
-- `https://fbot.slangbrain.com/api/phrases.json?token=<token>`
-
-See above for authentication and returned formatting.
+See above for authentication.
 
 
 ## Update a phrase
@@ -102,6 +115,18 @@ A phrase can be deleted by sending a `DELETE` request to
 - `https://fbot.slangbrain.com/api/phrases/<id>?token=<token>`
 
 `<id>` must be a valid phrase id the current user has access to.
+
+
+## Get phrases as CSV
+
+Alternatively to JSON, you can get the phrases of a user as `CSV` with a `GET` request to
+
+- `https://fbot.slangbrain.com/api/phrases.csv?token=<token>`
+
+The first column contains the phrases and the second column the explanations.
+No header row is added.
+
+See above for authentication.
 
 
 ## Link to a collection
