@@ -7,18 +7,15 @@ set -e
 
 
 headers_dir="static/images/headers"
-header_width=860
-small_width=600
+header_width=720
 
 
 
-echo adjusting header sizes and creating small versions:
+echo adjusting header sizes:
 
-for f in $(ls -1 ${headers_dir}/*.jpg | grep -v '.small.jpg$')
+for f in $(ls -1 ${headers_dir}/*.jpg)
 do
-  o="${headers_dir}/$(basename "$f" .jpg).small.jpg"
   echo mogrify -resize $header_width "'$f'"
-  echo convert -resize $small_width "'$f'" "'$o'"
 done | gm batch -echo on -
 
 

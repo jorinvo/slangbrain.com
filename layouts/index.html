@@ -30,7 +30,7 @@
     {{ range .Params.Collections }}
       <li>
         <a href="{{ $.Site.Params.boturl }}?ref=https%3A%2F%2Fslangbrain.com%2Fcollections%2F{{ .Name }}.csv">
-          <button>{{ .Name}} {{ index $.Site.Params.langicons .Icon }}</button>
+          <button>{{ .Name}} <span class="emoji">{{ index $.Site.Params.langicons .Icon }}</span></button>
         </a>
       </li>
     {{ end }}
@@ -61,7 +61,7 @@
       <article>
         <a
           href="{{ .Permalink }}"
-          style="background-image: url('{{ with .Params.image }}{{ printf "images/%s" . | relURL }}{{ else }}{{ printf "images/headers/%s.small.jpg" .File.TranslationBaseName | relURL }}{{ end }}');"
+          style="background-image: url('{{ with .Params.image }}{{ printf "images/%s" . | relURL }}{{ else }}{{ printf "images/headers/%s.jpg" .File.TranslationBaseName | relURL }}{{ end }}');"
         >
           <h4>{{ .Title }}</h4>
         </a>

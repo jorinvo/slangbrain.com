@@ -1,12 +1,19 @@
 {{ partial "top" . }}
 
 <section class="content">
+
   {{ if .Section }}
     <a href="{{ .Permalink }}">
       <h1>{{ .Title }}</h1>
     </a>
+  {{ end }}
 
-    <img src="{{ with .Params.image }}{{ printf "images/%s" . | relURL }}{{ else }}{{ printf "images/headers/%s.small.jpg" .File.TranslationBaseName | relURL }}{{ end }}" alt="post header image" class="header-image">
+  {{ with .Params.image }}
+    <img src="{{ printf "images/%s" . | relURL }}" alt="post header image" class="header-image">
+  {{ else }}
+    {{ if .Section }}
+      <img src="{{ printf "images/headers/%s.jpg" .File.TranslationBaseName | relURL }}" alt="post header image" class="header-image">
+    {{ end }}
   {{ end }}
 
   <article>{{ .Content }}</article>

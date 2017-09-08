@@ -11,6 +11,7 @@ please let us know in the [GitHub issues](https://github.com/qvl/slangbrain.com/
 
 <br>
 
+**Contents:**
 {{% toc %}}
 
 

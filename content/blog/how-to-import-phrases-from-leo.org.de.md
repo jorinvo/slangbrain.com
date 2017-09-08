@@ -2,7 +2,7 @@
 title: "Vokabeln von Leo.org importieren"
 date: 2017-08-31T13:08:07+02:00
 slug: vokabel-von-leo.org-importieren
-unsplash: aboeka Gwen Weustink
+unsplash: mbriney Matt Briney
 ---
 
 Die meisten hier kennen wahrscheinlich [leo.org](https://leo.org/) schon.
