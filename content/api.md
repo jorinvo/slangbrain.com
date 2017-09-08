@@ -78,7 +78,9 @@ with a body containing a JSON object as the following:
 }
 ```
 
-The response will report how many phrases have been imported:
+The response will report how many phrases have been imported.
+The difference between the number of sent phrases and the returned `count`
+are phrases which have been ignored because there is already a phrase with the same explanation:
 
 ```json
 {
@@ -102,8 +104,10 @@ The request body should be JSON formatted like this:
 
 ```json
 {
-  "phrase": "phrase",
-  "explanation": "explanation"
+  "data": {
+    "phrase": "phrase",
+    "explanation": "explanation"
+  }
 }
 ```
 
