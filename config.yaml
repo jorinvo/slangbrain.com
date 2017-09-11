@@ -27,7 +27,7 @@ params:
 
   langicons:
     en: ':gb:'
-    en: ':fr:'
+    fr: ':fr:'
     de: ':de:'
     jp: ':jp:'
     se: '🇸🇪'
