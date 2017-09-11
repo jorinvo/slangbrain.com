@@ -1,6 +1,6 @@
 <html lang="{{ .Site.Language.Lang }}">
   <head>
-    <title>{{ if .Title }}{{ .Title }} » {{ end }}{{ .Site.Title }}</title>
+    <title>{{ if and (not .IsHome) .Title }}{{ .Title }} » {{ end }}{{ .Site.Title }}</title>
 
     <meta charset="utf-8">
 
@@ -10,10 +10,12 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1">
 
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
-    {{- template "_internal/opengraph.html" . -}}
-    {{- template "_internal/twitter_cards.html" . -}}
-    {{- template "_internal/google_news.html" . -}}
-    {{- template "_internal/schema.html" . -}}
+    <meta name="author" content="{{ .Site.Title }}">
+    <meta name="description" content="{{ with .Params.Description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">
+    {{ template "_internal/opengraph.html" . }}
+    {{ template "_internal/twitter_cards.html" . }}
+    {{ template "_internal/google_news.html" . }}
+    {{ template "_internal/schema.html" . }}
 
     <link rel="icon" type="image/png" href="{{ "images/favicon-32x32.png" | relURL }}" sizes="32x32" />
     <link rel="icon" type="image/png" href="{{ "images/favicon-16x16.png" | relURL }}" sizes="16x16" />

@@ -1,7 +1,8 @@
 ---
-Slogan:         study language your way, right in facebook messenger
-Getstarted:     Go to Messenger
-Moreblog:       Find out more
+Title: Slangbrain
+Description: study language your way, right in facebook messenger
+Getstarted: Go to Messenger
+Moreblog: Find out more
 Fromcollection: Start with a collection of words in your favorite language
 Bullets:
 - Text: Slangbrain doesn't tell you what to study, you save what is interesting to you, and Slangbrain simply makes sure you won't ever forget it.
