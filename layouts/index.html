@@ -29,8 +29,8 @@
   <ul>
     {{ range .Params.Collections }}
       <li>
-        <a href="{{ $.Site.Params.boturl }}?ref=https%3A%2F%2Fslangbrain.com%2Fcollections%2F{{ .Name }}.csv">
-          <button>{{ .Name}} <span class="icon">{{ index $.Site.Params.langicons .Icon | emojify }}</span></button>
+        <a href="{{ $.Site.Params.boturl }}?ref=https%3A%2F%2Fslangbrain.com%2Fcollections%2F{{ $.Lang }}%2F{{ index $.Site.Params.langs . }}.csv">
+          <button>{{ index $.Site.Params.langicons . | emojify }} {{ index $.Site.Params.langs . }}</button>
         </a>
       </li>
     {{ end }}

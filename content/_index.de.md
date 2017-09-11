@@ -17,12 +17,8 @@ Bullets:
 - Text: Und das Ganze ist komplett kostenlos.
   Icon: zap
 Collections:
-- Name: Englisch
-  Icon: gb
-- Name: Schwedisch
-  Icon: se
-- Name: Japanisch
-  Icon: jp
-- Name: Thailändisch
-  Icon: th
+- en
+- se
+- jp
+- th
 ---

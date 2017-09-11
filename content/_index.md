@@ -17,12 +17,8 @@ Bullets:
 - Text: It is all free to use.
   Icon: zap
 Collections:
-- Name: German
-  Icon: de
-- Name: Swedish
-  Icon: se
-- Name: Japanese
-  Icon: jp
-- Name: Thai
-  Icon: th
+- de
+- se
+- jp
+- th
 ---
