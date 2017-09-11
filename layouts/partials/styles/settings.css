@@ -3,4 +3,4 @@
 {{ .Scratch.Add "white" "#fdfdfa" }}
 {{ .Scratch.Add "fontLogo" "font-family: 'Contrail One';" }}
 {{ .Scratch.Add "fontSecond" "font-family: 'Rubik';" }}
-{{ .Scratch.Add "fontText" "font-family: 'Nunito';" }}
+{{ .Scratch.Add "fontText" "font-family: 'Open Sans';" }}

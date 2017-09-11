@@ -27,6 +27,10 @@ h1 {
   {{ .Scratch.Get "fontLogo" }}
 }
 
+h2, h3, h4 {
+  {{ .Scratch.Get "fontSecond" }};
+}
+
 h2 {
   text-align: center;
   font-size: 130%;

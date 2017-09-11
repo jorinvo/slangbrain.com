@@ -39,7 +39,6 @@
 }
 
 .intro h2 {
-  {{ .Scratch.Get "fontSecond" }}
   margin-top: 3vw;
   margin-bottom: 15vw;
 }
