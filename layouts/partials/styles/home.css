@@ -150,11 +150,11 @@
   width: 100%;
   height: 100%;
   background: black;
-  opacity: .7;
+  opacity: .5;
   transition: .4s opacity ease-out;
 }
 .blogref article a:hover:before {
-  opacity: .3;
+  opacity: 0;
 }
 .blogref:after {
   content: '';
