@@ -103,9 +103,14 @@
   }
 
   .fromcollection ul {
-    padding: 0 16vw;
+    padding: 0 4vw;
     display: flex;
     flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .fromcollection ul {
+    padding: 0 16vw;
   }
 }
 
