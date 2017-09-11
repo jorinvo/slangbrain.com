@@ -18,6 +18,7 @@ Bullets:
   Icon: zap
 Collections:
 - en
+- fr
 - se
 - jp
 - th

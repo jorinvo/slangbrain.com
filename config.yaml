@@ -20,12 +20,14 @@ params:
   langs:
     en: 'English'
     de: 'Deutsch'
+    fr: 'Français'
     jp: '日本語'
     se: 'Svenska'
     th: 'ภาษาไทย'
 
   langicons:
     en: ':gb:'
+    en: ':fr:'
     de: ':de:'
     jp: ':jp:'
     se: '🇸🇪'
