@@ -1,7 +1,7 @@
 ---
 title: "How to Import Phrases From Leo.org"
 date: 2017-08-31T13:07:06+02:00
-unsplash: mbriney Matt Briney
+unsplash: hannynaibaho Hanny Naibaho
 ---
 
 *This article is only interesting for people learning German, but if your mother tongue is German, you should checkout [this article]({{% ref "blog/how-to-import-phrases-from-leo.org.de.md" %}}) instead.*

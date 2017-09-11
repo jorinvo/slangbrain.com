@@ -1,7 +1,7 @@
 ---
 title: "How to Import Phrases From Anki"
 date: 2017-08-31T13:06:33+02:00
-unsplash: ptrikutam Pavan Trikutam
+unsplash: benjaminhung Benjamin Hung
 ---
 
 It is completely fine to use Anki alongside Slangbrain.

@@ -1,7 +1,7 @@
 ---
 title: "Use Slanbgrain to Become a Polyglot"
 date: 2017-08-31T18:42:36+02:00
-unsplash: albertdera Albert Dera
+unsplash: benjaminhung Benjamin Hung
 ---
 
 Many of us not only learn one, but multiple languages at the same time.

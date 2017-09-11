@@ -1,7 +1,7 @@
 ---
 title: "Resources to Use Together With Slangbrain"
 date: 2017-08-30T16:27:06+02:00
-unsplash: rumandraisin Lilly Rum
+unsplash: benjaminhung Benjamin Hung
 ---
 
 [As mentioned before]({{% ref "blog/why-i-created-slangbrain.md" %}}),

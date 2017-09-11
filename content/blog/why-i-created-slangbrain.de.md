@@ -1,7 +1,7 @@
 ---
 title: "Warum Slangbrain"
 date: 2017-08-30T13:07:03+02:00
-unsplash: punttim Tim Gouw
+unsplash: benjaminhung Benjamin Hung
 slug: warum-slangbrain
 ---
 
