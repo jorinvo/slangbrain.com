@@ -30,7 +30,7 @@
     {{ range .Params.Collections }}
       <li>
         <a href="{{ $.Site.Params.boturl }}?ref=https%3A%2F%2Fslangbrain.com%2Fcollections%2F{{ $.Lang }}%2F{{ index $.Site.Params.langs . }}.csv">
-          <button>{{ index $.Site.Params.langicons . | emojify }} {{ index $.Site.Params.langs . }}</button>
+          <button class="lang-{{ . }}"><img class="flag" src="{{ printf "/images/icons/flags/%s.svg" . }}" alt="{{ . }}">{{ index $.Site.Params.langs . }}</button>
         </a>
       </li>
     {{ end }}

@@ -25,14 +25,6 @@ params:
     se: 'Svenska'
     th: 'ภาษาไทย'
 
-  langicons:
-    en: ':gb:'
-    fr: ':fr:'
-    de: ':de:'
-    jp: ':jp:'
-    se: '🇸🇪'
-    th: '🇹🇭'
-
 Languages:
   en:
     weight: 1

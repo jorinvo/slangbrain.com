@@ -119,6 +119,18 @@
   margin: 8% auto;
 }
 
+.flag {
+  width: auto;
+  height: 1.2em;
+  border-radius: 50%;
+  vertical-align: sub;
+  margin-right: 7px;
+}
+
+button.lang-th {
+  font-family: 'KodchiangUPC';
+  font-style: italic;
+}
 
 
 .blogref article {
