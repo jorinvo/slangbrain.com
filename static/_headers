@@ -4,5 +4,5 @@
   X-XSS-Protection: 1; mode=block
   X-Content-Type-Options: nosniff
   Referrer-Policy: unsafe-url
-  Content-Security-Policy: default-src 'self' 'unsafe-inline';
+  Content-Security-Policy: default-src 'self' *.cloudfront.net fonts.googleapis.com fonts.gstatic.com 'unsafe-inline';
 
