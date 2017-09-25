@@ -5,6 +5,18 @@
   background: none;
 }
 
+.home h3 {
+  margin: 0;
+  padding: 10% 4%;
+  text-align: center;
+  font-size: 220%;
+}
+@media screen and (min-width: 860px) {
+  h3 {
+    padding: 6% 4%;
+  }
+}
+
 .home section:nth-of-type(odd) {
   background-color: {{ .Scratch.Get "black" }};
   color: {{ .Scratch.Get "white" }};
@@ -188,3 +200,4 @@ button.lang-th {
   width: 90%;
   margin: 0;
 }
+

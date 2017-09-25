@@ -41,18 +41,6 @@ h2 {
   }
 }
 
-h3 {
-  margin: 0;
-  padding: 10% 4%;
-  text-align: center;
-  font-size: 220%;
-}
-@media screen and (min-width: 860px) {
-  h3 {
-    padding: 6% 4%;
-  }
-}
-
 figure {
   text-align: center;
 }
