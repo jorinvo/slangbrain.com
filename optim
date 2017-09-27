@@ -29,7 +29,7 @@ uglify -s static/js/leoToCSV.de.js -o static/js/leoToCSV.de.min.js > /dev/null
 echo - fetching csv files
 
 doc_url="https://docs.google.com/spreadsheets/d/1ft08b9AQF15SPiMA-20xrtuqZDRH-PMTsclGf22nAEA/gviz/tq?tqx=out:csv&sheet="
-sheets="en-de-Deutsch en-fr-Français en-jp-日本語 en-sv-Svenska en-th-ภาษาไทย de-en-English de-fr-Français de-jp-日本語 de-sv-Svenska de-th-ภาษาไทย"
+sheets="en-de-Deutsch en-fr-Francais en-jp-日本語 en-sv-Svenska en-th-ภาษาไทย de-en-English de-fr-Francais de-jp-日本語 de-sv-Svenska de-th-ภาษาไทย"
 
 for s in $sheets
 do

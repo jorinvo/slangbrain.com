@@ -20,7 +20,7 @@ params:
   langs:
     en: 'English'
     de: 'Deutsch'
-    fr: 'Français'
+    fr: 'Francais'
     jp: '日本語'
     se: 'Svenska'
     th: 'ภาษาไทย'

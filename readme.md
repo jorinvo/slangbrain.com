@@ -10,6 +10,7 @@ We are happy to get feedback or hear about your feature suggestions in the [GitH
 The repository that contains the source code of [slangbrain.com](https://slangbrain.com) can be found [on GitHub](https://github.com/qvl/slangbrain.com).
 
 We use the awesome [Hugo](https://gohugo.io/) to create our content in Markdown and render this website.
+Thanks to [Netlify](https://netlify.com/) for hosting.
 Also credits to the incredible [Unsplash](https://unsplash.com/collections/1135796/slangbrain) users that provide us with artwork,
 [Feather](https://feathericons.com/) for their gorgeous icons,
 [flag-icon-css](http://flag-icon-css.lip.is/) for the flag svg icons,
