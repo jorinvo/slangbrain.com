@@ -138,6 +138,6 @@ See above for authentication.
 Additionally to the API [collections]({{% ref "blog/create-edit-and-share-collections.md" %}}) can be used to share list of phrases with others.
 To directly prompt a user to import a certain collection a [m.me link](https://developers.facebook.com/docs/messenger-platform/referral-params) can be generated in the following format:
 
-- `https:m.me/slangbrain?ref=<collection>`
+- `https://m.me/slangbrain?ref=<collection>`
 
 `<collection>` must be an url-encoded URL of a CSV file containing a collection.
