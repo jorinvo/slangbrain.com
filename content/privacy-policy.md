@@ -9,12 +9,6 @@ In order to receive information about your Personal Data, the purposes and the p
 ## Data Controller and Owner
 
 Jorin Vogel
-<br>
-Steinmetzstr. 39
-<br>
-10783 Berlin
-<br>
-Germany
 
 mail@slangbrain.com
 
